@@ -1,35 +1,35 @@
 #task1
-# class Book:
-#     def __init__(self, title, author, pages):
-#        self.title = title
-#        self.author = author
-#        self.pages = pages
+class Book:
+    def __init__(self, title, author, pages):
+       self.title = title
+       self.author = author
+       self.pages = pages
 
-#     def display_info(self):
-#         print(f"Название книги: {self.title}, Автор: {self.author}, Кол-во страниц: {self.pages}") 
+    def display_info(self):
+        print(f"Название книги: {self.title}, Автор: {self.author}, Кол-во страниц: {self.pages}") 
 
-# book = Book("Зелёная миля", "Стивен Кинг", 384)   
-# book.display_info()  
+book = Book("Зелёная миля", "Стивен Кинг", 384)   
+book.display_info()  
 
 
 
 
 # #task2
-# class Animal:
-#     def speak(self):
-#         print("Animal makes a sound")
-# animal = Animal()
-# animal.speak()
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+animal = Animal()
+animal.speak()
 
-# class Dog(Animal):
-#     def __init__(self, breed):
-#         self.breed = breed
+class Dog(Animal):
+    def __init__(self, breed):
+        self.breed = breed
 
-#     def speak(self):
-#         print(f"{self.breed} dog barks") 
+    def speak(self):
+        print(f"{self.breed} dog barks") 
 
-# dog = Dog("Pitbull")
-# dog.speak()        
+dog = Dog("Pitbull")
+dog.speak()        
 
 
 #task3
