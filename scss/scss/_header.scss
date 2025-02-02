@@ -1,0 +1,40 @@
+.header {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+.content {
+  padding: 20px;
+  background-color: $primary-color;
+  color: white;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    background-color: $secondary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: $secondary-color;
+  @include center;
+}
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: "Arial", sans-serif;
